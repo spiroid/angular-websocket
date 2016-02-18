@@ -344,13 +344,13 @@
         throw new Error('Invalid url provided');
       }
 
-      // CommonJS
-      if (typeof exports === 'object' && require) {
+sh: 1: :q: not found
+      // if (typeof exports === 'object' && require) {
         try {
           ws = require('ws');
           Socket = (ws.Client || ws.client || ws);
         } catch(e) {}
-      }
+      // }
 
       // Browser
       Socket = Socket || $window.WebSocket || $window.MozWebSocket;
